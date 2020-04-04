@@ -1,0 +1,44 @@
+.social {
+  list-style: none;
+  border-bottom: 1px solid $decor-color;
+  padding: 0;
+  margin: 0;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link {
+
+  display: block;
+
+  &--vk {
+    width: 22px;
+    height: 19px;
+    margin-right: 36px;
+
+    path {
+      fill: $social-color;
+    }
+  }
+
+  &--instagram {
+    width: 17px;
+    height: 19px;
+    margin-right: 40px;
+
+    path {
+      fill: $social-color;
+    }
+  }
+
+  &--fb {
+    width: 10px;
+    height: 19px;
+
+    path {
+      fill: $social-color;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.more-items {
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+
+  svg {
+    width: 31px;
+    height: 31px;
+    margin-bottom: 25px;
+    fill: $input-label;
+    opacity: 0.2;
+  }
+}
+
+.more-items__title {
+  padding: 0;
+  margin: 0;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-black;
+  padding-bottom: 11px;
+}
+
+.more-items__text {
+  padding: 0;
+  margin: 0;
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  padding-bottom: 22px;
+}
+
+.more-items__btn {
+  background-color: $background-color;
+  color: $input-text;
+}

@@ -1,0 +1,19 @@
+.total {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $input-text;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 14px;
+
+  tbody {
+    display: inline-table;
+    text-align: left;
+
+    td:last-child {
+      text-align: right;
+    }
+  }
+}
