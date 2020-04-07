@@ -1,9 +1,7 @@
-.address {
-  background-color: $background-color;
-}
+.address {}
 
 
-.address-wrapper {
+.address__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,4 +28,9 @@
   font-size: 14px;
   line-height: 20px;
   color: $input-text;
+}
+
+.address__map {
+  display: block;
+  margin: 0 auto;
 }

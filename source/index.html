@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
@@ -57,45 +58,48 @@
       </div>
     </section>
     <section class="how-work">
-      <h3 class="how-work__title">Как это работает</h3>
-      <ul class="how-work__list about-list">
-        <li class="about-list__item about-list__item--health">Функциональное питание содержит
-          только полезные питательные вещества.</li>
-        <li class="about-list__item about-list__item--fast">Выпускается в виде порошка, который
-          нужно лишь залить кипятком и готово.</li>
-        <li class="about-list__item about-list__item--eat">Замените один-два приема обычной еды на
-          наше функциональное питание.</li>
-        <li class="about-list__item about-list__item--result">Уже через месяц наслаждайтесь
-          изменениями к лучшему вашего питомца!</li>
-      </ul>
+      <div class="wrapper">
+        <h3 class="how-work__title">Как это работает</h3>
+        <ul class="how-work__list about-list">
+          <li class="about-list__item about-list__item--health">Функциональное питание содержит
+            только полезные питательные вещества.</li>
+          <li class="about-list__item about-list__item--fast">Выпускается в виде порошка, который
+            нужно лишь залить кипятком и готово.</li>
+          <li class="about-list__item about-list__item--eat">Замените один-два приема обычной еды на
+            наше функциональное питание.</li>
+          <li class="about-list__item about-list__item--result">Уже через месяц наслаждайтесь
+            изменениями к лучшему вашего питомца!</li>
+        </ul>
+      </div>
     </section>
     <section class="live-example">
-      <h3 class="live-example__title">Живой пример</h3>
-      <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный
-        корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-        При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <ul class="stat">
-        <li class="stat__item">
-          <span class="stat__title">снижение веса</span>
-          <span class="stat__value">5 кг</span>
-        </li>
-        <li class="stat__item">
-          <span class="stat__title">затрачено времени</span>
-          <span class="stat__value">60 дней</span>
-        </li>
-      </ul>
-      <article class="live-example__slider slider">
-        <img src="img/before-mobile@1x.png" alt="" class="slider__img" width="311" height="232">
-        <div class="slider-toggle">
-          <span class="slider-toggle__was">Было</span>
-          <button class="slider-toggle__btn"></button>
-          <span class="slider-toggle__now">Стало</span>
-        </div>
-      </article>
-
+      <div class="wrapper live-example__wrapper">
+        <h3 class="live-example__title">Живой пример</h3>
+        <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный
+          корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <ul class="stat">
+          <li class="stat__item">
+            <span class="stat__title">снижение веса</span>
+            <span class="stat__value">5 кг</span>
+          </li>
+          <li class="stat__item">
+            <span class="stat__title">затрачено времени</span>
+            <span class="stat__value">60 дней</span>
+          </li>
+        </ul>
+        <article class="live-example__slider slider">
+          <img src="img/before-mobile@1x.png" alt="" class="slider__img" width="311" height="232">
+          <div class="slider-toggle">
+            <span class="slider-toggle__was">Было</span>
+            <button class="slider-toggle__btn"></button>
+            <span class="slider-toggle__now">Стало</span>
+          </div>
+        </article>
+      </div>
     </section>
     <section class="address">
-      <div class="wrapper address-wrapper">
+      <div class="wrapper address__wrapper">
         <h3 class="address__title">приглашаем к сотрудничеству дилеров!</h3>
         <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
@@ -134,7 +138,7 @@
               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19">
               <path
                 d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z" />
-              </svg></a>
+            </svg></a>
         </li>
       </ul>
       <div class="developer">
