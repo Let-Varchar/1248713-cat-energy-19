@@ -1,0 +1,27 @@
+.developer {
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.developer__link {
+  display: block;
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $input-text;
+}
+
+.developer__logo {
+  display: block;
+  width: 27px;
+  height: 34px;
+
+  path {
+    fill: $social-color;
+  }
+
+}

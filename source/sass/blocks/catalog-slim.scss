@@ -1,0 +1,33 @@
+.catalog-slim {
+  background-color: $background-color;
+  padding: 0 20px
+}
+
+.catalog-slim__title {
+  font-family: $font;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $main-black;
+  font-size: 24px;
+  line-height: 37px;
+  margin: 0;
+  padding: 0;
+  padding-top: 39px;
+  padding-bottom: 36px;
+}
+
+.catalog-slim__text {
+  font-family: $font-second;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $decor-color;
+  color: $input-text;
+}
+
+.catalog-slim__link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 22px;
+}

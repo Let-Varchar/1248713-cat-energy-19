@@ -1,0 +1,31 @@
+.gift {
+  padding-top: 39px;
+  padding-bottom: 35px;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  width: 280px;
+  height: 289px;
+  position: relative;
+
+  svg {
+    width: 56px;
+    height: 61px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    fill: $second-color;
+  }
+}
+
+.gift__text {
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $second-color;
+  padding: 0;
+  margin: 0;
+  padding: 130px 55px 43px 55px;
+  text-align: center;
+
+}
