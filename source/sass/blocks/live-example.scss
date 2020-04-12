@@ -20,9 +20,25 @@
 }
 
 .live-example__wrapper {
-  background-color: $background-color;
+  @include wrapper;
 }
 
 .live-example__slider {
   padding-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .live-example__title {
+    padding-top: 51px;
+    padding-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .live-example__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 20px;
+    padding-bottom: 55px;
+  }
 }

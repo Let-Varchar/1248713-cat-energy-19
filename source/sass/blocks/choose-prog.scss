@@ -1,3 +1,7 @@
+.choose-prog__wrapper {
+  @include wrapper;
+}
+
 .choose-prog {
   background-image: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -26,4 +30,81 @@
 
 .choose-prog__sample {
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .choose-prog__title {
+    color: $main-black;
+    font-size: 60px;
+    line-height: 60px;
+    width: 415px;
+    margin: 0;
+    margin-bottom: 33px;
+  }
+
+  .choose-prog {
+    background-image: none;
+  }
+
+  .choose-prog__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $main-black;
+
+  }
+
+  .choose-prog__sample {
+    display: block;
+    width: 709px;
+  }
+
+  .choose-prog__choose-link {
+    width: 245px;
+    position: absolute;
+    margin-top: -655px;
+    z-index: 3;
+    padding: 17px 26px 15px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choose-prog__title {
+    margin-top: 113px;
+    margin-left: 80px;
+    margin-bottom: 33px;
+  }
+
+  .choose-prog__slogan {
+    margin-left: 80px;
+    margin-bottom: 53px;
+  }
+
+  .choose-prog__choose-link {
+    margin: 0;
+    margin-left: 80px;
+  }
+
+  .choose-prog {
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-position: right;
+    position: relative;
+    background-size: contain;
+    min-height: 696px;
+    padding-top: 113px;
+    z-index: 4;
+  }
+
+  .choose-prog__sample {
+    width: 552px;
+    height: auto;
+    position: absolute;
+    top: 55%;
+    right: 20%;
+    transform: translate(0, -50%);
+  }
+
+
 }

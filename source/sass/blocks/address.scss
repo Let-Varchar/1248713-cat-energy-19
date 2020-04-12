@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include wrapper;
 }
 
 .address__title {
@@ -23,14 +24,90 @@
 
 .address__text {
   font-family: $font-second;
-  padding: 0;
-  margin: 0;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  font-style: normal;
   color: $input-text;
+  padding: 0;
+  margin: 0;
 }
 
 .address__map {
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+
+  .address__wrapper {
+    min-height: 201px;
+    padding-left: 71px;
+    padding-right: 72px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $background-color;
+  }
+
+  .address__title {
+    width: 208px;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .address__text {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .address__city {
+    display: block;
+    padding-top: 24px;
+  }
+
+  .address__map {
+    display: block;
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address {
+    position: relative;
+  }
+
+  .address__map {
+    width: 100vw;
+    height: 400px;
+    position: relative;
+    display: block;
+
+    &::before {
+      content: "";
+      width: 113px;
+      height: 106px;
+      background-image: url("../../img/map-pin.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 5;
+      top: 123px;
+      left: 891px;
+    }
+  }
+
+  .address__wrapper {
+    position: absolute;
+    z-index: 5;
+    width: 570px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+  }
 }

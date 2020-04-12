@@ -29,3 +29,56 @@
   text-align: center;
 
 }
+
+@media (min-width: $tablet-width) {
+  .gift {
+    min-height: 345px;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    width: 708px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    svg {
+      top: 40%;
+      left: 20%;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  .gift__text {
+    padding: 0;
+    width: 174px;
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    width: 245px;
+    min-height: 289px;
+    padding: 0;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-position: center;
+
+    svg {
+      top: 20%;
+      left: 50%;
+    }
+  }
+
+  .gift__text {
+    width: 174px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}

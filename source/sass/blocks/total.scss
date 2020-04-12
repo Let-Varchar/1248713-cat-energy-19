@@ -7,13 +7,24 @@
   padding: 0;
   margin: 0;
   padding-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+}
 
-  tbody {
-    display: inline-table;
-    text-align: left;
 
-    td:last-child {
-      text-align: right;
-    }
+@media (min-width: $tablet-width) {
+  .total {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .total__title {
+    padding-right: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .total {
+    padding-bottom: 0;
   }
 }

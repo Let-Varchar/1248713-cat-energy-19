@@ -1,11 +1,9 @@
-.main-nav {
-  width: 25px;
-  height: 19px;
+.main-nav__list {
+  display: none;
 }
 
-
 .main-nav__wrapper {
-  display: none;
+  @include wrapper;
 }
 
 .main-nav__toggle {
@@ -15,4 +13,16 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 410px;
+  }
 }

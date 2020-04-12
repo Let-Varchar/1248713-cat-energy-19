@@ -30,4 +30,111 @@
   display: block;
   padding-top: 20px;
   padding-bottom: 22px;
+  font-size: 16px;
+  line-height: 16px;
+  color: $main-black;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-slim {
+    padding: 0 55px;
+    position: relative;
+  }
+
+  .catalog-slim__title {
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .catalog-slim__text {
+    padding-right: 225px;
+    border-bottom: none;
+
+    &::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      top: 35px;
+      right: 55px;
+      border-radius: 50%;
+      background-color: $main-color;
+      position: absolute;
+    }
+
+    &::after {
+      content: "";
+      width: 191px;
+      height: 194px;
+      position: absolute;
+      top: 35px;
+      right: 55px;
+      background-image: url("../../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .catalog-slim__title {
+    padding-bottom: 26px;
+  }
+
+  .catalog-slim__text {
+    padding-bottom: 61px;
+  }
+
+  .catalog-slim__link {
+    padding-bottom: 61px;
+  }
+
+  .catalog-slim__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-slim {
+    max-width: 570px;
+    padding: 0;
+    padding-left: 52px;
+    padding-right: 69px;
+  }
+
+  .catalog-slim__title {
+    text-align: center;
+    padding-bottom: 75px;
+    padding-top: 81px;
+  }
+
+  .catalog-slim__text {
+    padding: 0;
+
+
+    &::after {
+      content: "";
+      width: 71px;
+      height: 97px;
+      position: absolute;
+      top: 41px;
+      left: 58px;
+      background-image: url("../../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      border-radius: 50%;
+      background-color: $main-color;
+      position: absolute;
+    }
+  }
+
+  .catalog-slim__link {
+    padding-top: 36px;
+  }
 }
