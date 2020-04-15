@@ -3,3 +3,42 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    width: 708px;
+  }
+
+  .catalog__item {
+    margin-right: 60px;
+    margin-bottom: 140px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .catalog__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 100%;
+  }
+
+  .catalog__item {
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

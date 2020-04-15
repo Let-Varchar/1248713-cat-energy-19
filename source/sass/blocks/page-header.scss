@@ -1,11 +1,26 @@
 .page-header {
-  padding-top: 11px;
-  padding-bottom: 15px;
-  min-width: 320px;
+  margin-top: 11px;
 }
 
 .page-header__wrapper {
+  @include wrapper;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    margin-top: 53px;
+  }
+
+  .page-header__logo {
+    width: 174px;
+  }
+
+  .page-header__wrapper {
+    z-index: 6;
+
+  }
 }

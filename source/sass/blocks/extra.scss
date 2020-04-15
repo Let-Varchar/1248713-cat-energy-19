@@ -29,3 +29,38 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .extra {
+    width: 100%;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background-color: $main-color;
+      position: absolute;
+      z-index: -1;
+      top: 53px;
+      left: -30px;
+    }
+  }
+
+  .extra__title {
+    border: none;
+    font-size: 36px;
+    line-height: 36px;
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 10px;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra__wrapper {
+    display: flex;
+    align-items: center;
+  }
+}

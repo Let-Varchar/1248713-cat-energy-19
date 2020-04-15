@@ -1,3 +1,7 @@
+.page-catalog__wrapper {
+  @include wrapper;
+}
+
 .page-catalog {
   padding-bottom: 35px;
 }
@@ -12,4 +16,13 @@
   padding: 0;
   padding-top: 36px;
   padding-bottom: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-catalog__title {
+    padding-top: 65px;
+    padding-bottom: 156px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

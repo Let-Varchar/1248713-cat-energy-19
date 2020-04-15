@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  padding-left: 100px;
   font-family: $font-second;
   font-size: 14px;
   line-height: 18px;
@@ -12,6 +11,7 @@
 .about-list__item {
   margin-bottom: 31px;
   position: relative;
+  padding-left: 80px;
 
   &::before {
     content: "";
@@ -20,36 +20,84 @@
     background-color: $main-color;
     position: absolute;
     top: -5px;
-    left: -80px;
+    left: 0;
   }
 
   &--health::before {
-    background-image: url("../../img/advantage-leaf@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--fast::before {
-    background-image: url("../../img/advantage-powder@1x.png");
+    background-image: url("../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--eat::before {
-    background-image: url("../../img/advantage-dining@1x.png");
+    background-image: url("../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--result::before {
-    background-image: url("../../img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 
-
-
 .about-list__item:last-child {
   margin-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .about-list {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .about-list__item {
+    width: 224px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 180px;
+    margin-right: 183px;
+
+    &::before {
+      top: -92px;
+      left: 0px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+  }
+
+  .about-list__item--eat {
+    margin-top: 254px;
+  }
+
+  .about-list__item--result {
+    margin-top: 254px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-list {
+    flex-wrap: nowrap;
+    padding-top: 180px;
+    justify-content: space-between;
+  }
+
+  .about-list__item {
+    margin: 0;
+    padding: 0;
+  }
 }

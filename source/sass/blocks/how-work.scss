@@ -1,3 +1,7 @@
+.how-work__wrapper {
+  @include wrapper;
+}
+
 .how-work {
   margin-bottom: 40px;
 }
@@ -12,4 +16,21 @@
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .how-work__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .how-work {
+    margin-bottom: 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-work__title {
+    margin: 0;
+  }
 }

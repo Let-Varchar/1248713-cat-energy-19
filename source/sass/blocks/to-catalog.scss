@@ -1,3 +1,7 @@
+.to-catalog__wrapper {
+  @include wrapper;
+}
+
 .to-catalog__link {
   font-family: $font;
   font-weight: 400;
@@ -12,4 +16,26 @@
 
 .to-catalog {
   margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .to-catalog {
+    margin-bottom: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .to-catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .to-catalog__slim {
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+
+  .to-catalog {
+    margin-bottom: 79px;
+  }
 }
