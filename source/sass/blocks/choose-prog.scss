@@ -7,7 +7,6 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   width: 100%;
-  margin-bottom: 22px;
 }
 
 .choose-prog__title {
@@ -34,16 +33,20 @@
 
 @media (min-width: $tablet-width) {
   .choose-prog__title {
+    display: inline-block;
     color: $main-black;
     font-size: 60px;
     line-height: 60px;
-    width: 415px;
+    width: 510px;
     margin: 0;
-    margin-bottom: 33px;
+    padding: 0;
+    padding-top: 30px;
+    padding-left: 87px;
   }
 
   .choose-prog {
     background-image: none;
+    height: 840px;
   }
 
   .choose-prog__slogan {
@@ -51,30 +54,39 @@
     line-height: 20px;
     text-transform: uppercase;
     color: $main-black;
-
+    padding-top: 25px;
+    padding-left: 87px;
   }
 
   .choose-prog__sample {
-    display: block;
-    width: 709px;
+    position: absolute;
+    top: 230px;
+    left: 29px;
   }
 
   .choose-prog__choose-link {
     width: 245px;
-    position: absolute;
-    margin-top: -655px;
     z-index: 3;
     padding: 17px 26px 15px 26px;
     font-size: 20px;
     line-height: 20px;
+    margin-top: 47px;
+    margin-left: 90px;
+    position: relative;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .choose-prog {
+    margin: 0;
+  }
+
   .choose-prog__title {
-    margin-top: 113px;
-    margin-left: 80px;
-    margin-bottom: 33px;
+    margin: 0;
+    width: 510px;
+    padding-top: 53px;
+    padding-left: 77px;
+    padding-bottom: 24px;
   }
 
   .choose-prog__slogan {
@@ -84,25 +96,36 @@
 
   .choose-prog__choose-link {
     margin: 0;
-    margin-left: 80px;
+    margin-left: 77px;
   }
 
-  .choose-prog {
-    background-image: url("../../img/index-background-desktop@1x.jpg");
-    background-position: right;
+  .choose-prog__wrapper {
+
     position: relative;
-    background-size: contain;
-    min-height: 696px;
-    padding-top: 113px;
     z-index: 4;
+    min-height: 604px;
+    padding-bottom: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      top: -171px;
+      left: 646px;
+      width: 720px;
+      height: 760px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -1;
+    }
   }
 
   .choose-prog__sample {
     width: 552px;
     height: auto;
     position: absolute;
-    top: 55%;
-    right: 20%;
+    top: 221px;
+    left: 488px;
     transform: translate(0, -50%);
   }
 

@@ -16,18 +16,6 @@
   padding-bottom: 15px;
 }
 
-.extra-item__volume {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  font-family: $font-second;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  padding-bottom: 14px;
-  padding-right: 53px;
-}
-
 @media (min-width: $tablet-width) {
   .extra-item {
     border: 1px solid $decor-color;
@@ -64,6 +52,7 @@
   }
 
   .extra-item {
+    width: 895px;
     padding: 15px 0;
     display: flex;
     justify-content: space-between;
@@ -78,19 +67,32 @@
 
   .extra-item__title {
     padding: 0;
-    width: 245px;
-    margin-right: 80px;
+    width: 327px;
+    padding-right: 40px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .extra-item__total {
-    margin-right: 113px;
-    width: 285px;
+    display: flex;
+  }
 
+  .extra-item__value {
+    width: 243px;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: $font-second;
+  }
+
+  .extra-item__price {
+    width: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: $font-second;
   }
 
   .extra-item__buy {
     width: 245px;
-    margin-left: 40px;
   }
-
 }

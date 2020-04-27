@@ -37,11 +37,16 @@
 
 @media (min-width: $tablet-width) {
   .catalog-slim {
-    padding: 0 55px;
+    padding: 0 52px;
     position: relative;
+    margin-bottom: 20px;
+    padding-top: 46px;
+    padding-bottom: 62px;
   }
 
   .catalog-slim__title {
+    padding-top: 30px;
+    padding-bottom: 26px;
     font-size: 36px;
     line-height: 37px;
   }
@@ -49,13 +54,15 @@
   .catalog-slim__text {
     padding-right: 225px;
     border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
 
     &::before {
       content: "";
       width: 200px;
       height: 200px;
-      top: 35px;
-      right: 55px;
+      top: 91px;
+      right: 62px;
       border-radius: 50%;
       background-color: $main-color;
       position: absolute;
@@ -66,29 +73,19 @@
       width: 191px;
       height: 194px;
       position: absolute;
-      top: 35px;
-      right: 55px;
-      background-image: url("../../img/icon-cat-slim.svg");
+      top: 79px;
+      right: 67px;
+      background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
   }
 
-  .catalog-slim__title {
-    padding-bottom: 26px;
-  }
-
-  .catalog-slim__text {
-    padding-bottom: 61px;
-  }
-
-  .catalog-slim__link {
-    padding-bottom: 61px;
-  }
-
   .catalog-slim__link {
     font-size: 20px;
     line-height: 20px;
+    padding: 0;
+    padding-top: 33px;
   }
 }
 
@@ -97,17 +94,21 @@
     max-width: 570px;
     padding: 0;
     padding-left: 52px;
-    padding-right: 69px;
+    padding-right: 52px;
+    padding-bottom: 60px;
   }
 
   .catalog-slim__title {
-    text-align: center;
-    padding-bottom: 75px;
-    padding-top: 81px;
+    padding-bottom: 73px;
+    padding-top: 80px;
+    padding-left: 160px;
   }
 
   .catalog-slim__text {
     padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 30px;
 
 
     &::after {
@@ -115,9 +116,9 @@
       width: 71px;
       height: 97px;
       position: absolute;
-      top: 41px;
-      left: 58px;
-      background-image: url("../../img/icon-cat-slim.svg");
+      top: 43px;
+      left: 63px;
+      background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -126,8 +127,8 @@
       content: "";
       width: 100px;
       height: 100px;
-      top: 47px;
-      left: 52px;
+      top: 48px;
+      left: 50px;
       border-radius: 50%;
       background-color: $main-color;
       position: absolute;
@@ -135,6 +136,6 @@
   }
 
   .catalog-slim__link {
-    padding-top: 36px;
+    padding: 0;
   }
 }

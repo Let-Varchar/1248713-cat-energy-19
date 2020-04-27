@@ -2,9 +2,6 @@
   @include wrapper;
 }
 
-.how-work {
-  margin-bottom: 40px;
-}
 
 
 .how-work__title {
@@ -15,22 +12,24 @@
   color: $main-black;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
+  .how-work {
+    padding-bottom: 102px;
+    border-bottom: 1px solid $decor-color;
+  }
+
   .how-work__title {
     font-size: 60px;
     line-height: 60px;
-  }
-
-  .how-work {
-    margin-bottom: 105px;
+    padding-top: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .how-work__title {
     margin: 0;
+    padding-top: 76px;
   }
 }

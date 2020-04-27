@@ -23,13 +23,10 @@
   @include wrapper;
 }
 
-.live-example__slider {
-  padding-bottom: 35px;
-}
 
 @media (min-width: $tablet-width) {
   .live-example__title {
-    padding-top: 51px;
+    padding-top: 44px;
     padding-bottom: 60px;
     font-size: 60px;
     line-height: 60px;
@@ -40,5 +37,15 @@
     line-height: 24px;
     padding-right: 20px;
     padding-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live-example__wrapper {
+    padding-bottom: 70px;
+  }
+
+  .live-example__title {
+    padding-top: 127px;
   }
 }

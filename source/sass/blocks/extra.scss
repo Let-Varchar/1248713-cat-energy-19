@@ -16,20 +16,6 @@
 }
 
 
-
-.extra__total {
-  tbody {
-    display: inline-table;
-    text-align: left;
-    width: 280px;
-
-    td:last-child {
-      text-align: right;
-
-    }
-  }
-}
-
 @media (min-width: $tablet-width) {
   .extra {
     width: 100%;
@@ -59,8 +45,26 @@
 }
 
 @media (min-width: $desktop-width) {
+  .extra {
+    margin-top: -66px;
+    padding-top: 0;
+    margin-bottom: 0;
+
+    &::before {
+      top: 23px;
+      left: 0;
+    }
+  }
+
   .extra__wrapper {
     display: flex;
     align-items: center;
   }
+
+  .extra__title {
+    padding: 0;
+    width: 360px;
+    margin-bottom: 79px;
+  }
+
 }

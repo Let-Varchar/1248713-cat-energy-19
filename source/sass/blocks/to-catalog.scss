@@ -11,17 +11,7 @@
 }
 
 .to-catalog__slim {
-  margin-bottom: 20px;
-}
-
-.to-catalog {
-  margin-bottom: 32px;
-}
-
-@media (min-width: $tablet-width) {
-  .to-catalog {
-    margin-bottom: 51px;
-  }
+  margin-bottom: 30px;
 }
 
 @media (min-width: $desktop-width) {
@@ -33,9 +23,5 @@
   .to-catalog__slim {
     margin-bottom: 0;
     margin-right: 80px;
-  }
-
-  .to-catalog {
-    margin-bottom: 79px;
   }
 }
