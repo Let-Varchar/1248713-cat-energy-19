@@ -9,9 +9,9 @@
 }
 
 .about-list__item {
-  margin-bottom: 31px;
   position: relative;
   padding-left: 80px;
+  margin-bottom: 27px;
 
   &::before {
     content: "";
@@ -66,7 +66,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
-    margin-top: 183px;
+    margin-top: 152px;
     margin-right: 138px;
     font-size: 16px;
     line-height: 24px;

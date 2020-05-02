@@ -12,13 +12,40 @@
   line-height: 37px;
   margin: 0;
   padding: 0;
-  padding-top: 39px;
-  padding-bottom: 36px;
+  padding-top: 22px;
+  padding-bottom: 29px;
+  padding-left: 71px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: $main-color;
+  }
+
+  &::after {
+    content: "";
+    width: 35px;
+    height: 49px;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .catalog-slim__text {
   font-family: $font-second;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   padding: 0;
   margin: 0;
   padding-bottom: 23px;
@@ -33,6 +60,10 @@
   font-size: 16px;
   line-height: 16px;
   color: $main-black;
+
+  svg {
+    margin-left: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -45,10 +76,18 @@
   }
 
   .catalog-slim__title {
-    padding-top: 30px;
-    padding-bottom: 26px;
+    padding: 0;
     font-size: 36px;
     line-height: 37px;
+    margin-bottom: 24px;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: none;
+    }
   }
 
   .catalog-slim__text {
@@ -61,7 +100,7 @@
       content: "";
       width: 200px;
       height: 200px;
-      top: 91px;
+      top: 63px;
       right: 62px;
       border-radius: 50%;
       background-color: $main-color;
@@ -73,7 +112,7 @@
       width: 191px;
       height: 194px;
       position: absolute;
-      top: 79px;
+      top: 51px;
       right: 67px;
       background-image: url("../img/icon-cat-slim.svg");
       background-repeat: no-repeat;
@@ -86,6 +125,10 @@
     line-height: 20px;
     padding: 0;
     padding-top: 33px;
+
+    svg {
+      margin-left: 20px;
+    }
   }
 }
 

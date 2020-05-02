@@ -1,12 +1,11 @@
 .social {
-  list-style: none;
-  border-bottom: 1px solid $decor-color;
   padding: 0;
   margin: 0 auto;
+  list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  width: 132px;
 }
 
 .social__link {
@@ -15,7 +14,7 @@
   &--vk {
     width: 22px;
     height: 19px;
-    margin-right: 36px;
+
 
     path {
       fill: $social-color;
@@ -25,7 +24,7 @@
   &--instagram {
     width: 17px;
     height: 19px;
-    margin-right: 36px;
+
 
     path {
       fill: $social-color;
@@ -45,7 +44,7 @@
 @media (min-width: $tablet-width) {
   .social {
     border: none;
-    width: 130px;
+    width: 125px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +73,8 @@
     display: flex;
     justify-content: space-between;
     width: 130px;
+    margin: 0;
+    padding: 0;
   }
 
   .social__link {

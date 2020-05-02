@@ -2,10 +2,17 @@
   background-color: $background-color;
 }
 
+.page-footer__social {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid $decor-color;
+  border-bottom: 1px solid $decor-color;
+}
 
 .page-footer__logo {
   padding-top: 39px;
-  padding-bottom: 31px;
+  padding-bottom: 28px;
   border-bottom: 1px solid $decor-color;
   display: flex;
   justify-content: center;
@@ -16,11 +23,19 @@
 }
 
 .page-footer__developer {
-  padding-top: 22px;
+  padding-top: 19px;
   padding-bottom: 22px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+
+  svg {
+    display: block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+  }
 }
 
 @media (min-width: $tablet-width) {

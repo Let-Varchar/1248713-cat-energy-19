@@ -4,8 +4,8 @@
   font-size: 36px;
   line-height: 60px;
   margin: 0;
-  margin-bottom: 35px;
-  padding-top: 35px;
+  margin-bottom: 25px;
+  padding-top: 18px;
   color: $main-black;
 }
 
@@ -17,6 +17,7 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 39px;
+  padding-right: 20px;
   color: $main-black;
 }
 
@@ -28,8 +29,12 @@
   .form-main__title {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 31px;
     margin-bottom: 53px;
   }
 
+  .form-main__top {
+    padding-bottom: 27px;
+  }
 
 }

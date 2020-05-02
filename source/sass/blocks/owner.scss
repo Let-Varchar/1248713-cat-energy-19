@@ -63,6 +63,7 @@
   .owner__label {
     font-size: 20px;
     line-height: 20px;
+    padding-right: 20px;
   }
 
   .owner__input {
@@ -73,5 +74,48 @@
 
   .owner__wrapper {
     margin-bottom: 20px;
+  }
+
+  .owner__label--email::after {
+    top: 22px;
+    right: 20px;
+  }
+
+  .owner__label--tel::after {
+    top: 21px;
+    right: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+  }
+
+  .owner__wrapper {
+    margin-bottom: 0;
+    width: 50%;
+    margin-right: 78px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .owner__label {
+    padding-right: 20px;
+  }
+
+  .owner__label--email::after {
+    top: 22px;
+    right: 20px;
+  }
+
+  .owner__label--tel::after {
+    top: 20px;
+    right: 20px;
   }
 }

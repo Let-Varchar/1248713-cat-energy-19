@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .choose-prog__title {
@@ -17,6 +18,9 @@
   color: $second-color;
   padding: 0;
   margin: 0;
+  padding-top: 28px;
+  padding-left: 17px;
+  margin-bottom: 24px;
 }
 
 .choose-prog__slogan {
@@ -25,6 +29,11 @@
   font-size: 14px;
   line-height: 14px;
   color: $second-color;
+  margin: 0;
+  padding: 0;
+  padding-left: 41px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .choose-prog__sample {
@@ -54,7 +63,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: $main-black;
-    padding-top: 25px;
+    padding-top: 41px;
     padding-left: 87px;
   }
 
@@ -87,6 +96,7 @@
     padding-top: 53px;
     padding-left: 77px;
     padding-bottom: 24px;
+
   }
 
   .choose-prog__slogan {

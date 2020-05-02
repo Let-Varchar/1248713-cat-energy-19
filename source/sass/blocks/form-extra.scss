@@ -4,7 +4,7 @@
 }
 
 .form-extra__wrapper {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .form-extra__container {
@@ -16,10 +16,6 @@
 
   input:checked+label:after {
     content: "";
-  }
-
-  &:last-child {
-    margin-bottom: 0;
   }
 }
 
@@ -60,13 +56,15 @@
 @media (min-width: $tablet-width) {
 
   .form-extra {
-    padding-bottom: 65px;
+    padding-bottom: 60px;
+    padding-left: 52px;
   }
 
 
   .form-extra__container {
     display: flex;
-    margin-bottom: 54px;
+    margin-bottom: 50px;
+    width: 690px;
 
     &:last-child {
       margin-bottom: 0;
@@ -83,11 +81,58 @@
     line-height: 20px;
 
     &::before {
-      top: 0;
+      top: -6px;
+      left: -12px;
+      width: 40px;
+      height: 40px;
     }
 
     &::after {
       top: 4px;
+      left: 4px;
     }
+  }
+
+  .form__btn {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-extra {
+    padding-left: 40px;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 74px;
+  }
+
+  .form-extra__container {
+    margin-bottom: 0;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .form-extra__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .form-extra__label {
+    padding-left: 55px;
+  }
+
+  .form-extra__label::before {
+    width: 40px;
+    height: 40px;
+    top: -8px;
+    left: -1px;
+  }
+
+  .form-extra__label::after {
+    top: 0;
+    left: 15px;
   }
 }

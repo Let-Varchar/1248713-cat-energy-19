@@ -10,8 +10,8 @@
 
 .developer__logo {
   display: block;
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
 
   path {
     fill: $social-color;
@@ -34,8 +34,8 @@
 @media (min-width: $desktop-width) {
   .developer__logo {
     svg {
-      width: 27px;
-      height: 34px;
+      width: 40px;
+      height: 40px;
     }
   }
 }

@@ -1,8 +1,12 @@
+.live-example {
+  padding-top: 30px;
+}
+
 .live-example__title {
   margin: 0;
   padding: 0;
   padding-top: 33px;
-  padding-bottom: 33px;
+  padding-bottom: 24px;
   font-family: $font;
   font-size: 36px;
   line-height: 60px;
@@ -16,7 +20,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $input-text;
-  padding-right: 53px;
+  padding-right: 12px;
 }
 
 .live-example__wrapper {
@@ -25,8 +29,11 @@
 
 
 @media (min-width: $tablet-width) {
+  .live-example {
+    padding-top: 12px;
+  }
+
   .live-example__title {
-    padding-top: 44px;
     padding-bottom: 60px;
     font-size: 60px;
     line-height: 60px;

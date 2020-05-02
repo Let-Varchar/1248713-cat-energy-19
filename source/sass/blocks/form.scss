@@ -1,14 +1,11 @@
 .form__cat {
   @include wrapper;
-  padding-bottom: 26px;
-  border-bottom: 1px solid $decor-color;
 }
 
 .form__title {
   position: relative;
   padding: 0;
   margin: 0;
-  padding-top: 31px;
   margin-bottom: 30px;
 
   span {
@@ -28,6 +25,7 @@
 .form__owner {
   position: relative;
   @include wrapper;
+  padding-top: 32px;
 
   &::before {
     content: "";
@@ -48,6 +46,7 @@
 .form__comment {
   position: relative;
   @include wrapper;
+  padding-top: 28px;
 
   &::before {
     content: "";
@@ -78,7 +77,8 @@
 .form__extra {
   position: relative;
   @include wrapper;
-  padding-bottom: 43px;
+  padding-bottom: 13px;
+  padding-top: 28px;
 
   &::before {
     content: "";
@@ -122,62 +122,74 @@
 
   .form__title {
     position: relative;
-    padding: 0 15px;
+    padding: 0;
     margin-bottom: 70px;
 
     span {
       font-size: 36px;
       line-height: 36px;
-      padding: 0 30px;
+      padding: 0 40px;
       background-color: #ffffff;
       width: auto;
     }
   }
 
   .form__text {
-    padding-left: 38px;
+    padding-left: 40px;
     padding-right: 300px;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 70px;
   }
 
   .form__cat {
     padding-left: 70px;
-    padding-bottom: 79px;
+    padding-bottom: 77px;
     border: none;
   }
 
   .form__owner {
+    padding-right: 65px;
+    padding-left: 30px;
+    padding-bottom: 65px;
 
     &::before {
       top: 20px;
+      left: 0;
     }
   }
 
-  .form__owner {
-    padding-left: 70px;
-    padding-bottom: 79px;
+
+
+  .form__owner-inputs {
+    padding-left: 40px;
+    padding-top: 5px;
   }
 
   .form__comment::before {
     top: 20px;
+    left: 0;
   }
 
   .form__comment {
     padding-bottom: 69px;
+    padding-left: 31px;
 
     textarea {
       height: 174px;
       font-size: 20px;
       line-height: 30px;
+      padding-top: 13px;
       padding-left: 20px;
-      padding-top: 17px;
+    }
+
+    .form__wrapper {
+      padding-left: 38px;
     }
   }
 
   .form__extra::before {
     top: 20px;
+    left: 0;
   }
 
   .form__extra {
@@ -190,6 +202,7 @@
     flex-direction: row;
     align-items: center;
     padding-bottom: 72px;
+    padding-left: 70px;
   }
 
   .form__btn {
@@ -203,5 +216,61 @@
   .form__note {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__text {
+    padding-left: 0;
+    padding-right: 850px;
+  }
+
+  .form__cat {
+    padding-left: 40px;
+    padding-bottom: 66px;
+  }
+
+  .form__owner {
+    padding-left: 40px;
+    padding-bottom: 71px;
+
+    &::before {
+      left: -27px;
+    }
+  }
+
+  .form__comment {
+    padding-left: 0;
+
+    .form__wrapper {
+      padding-left: 40px;
+    }
+
+    textarea {
+      padding-top: 15px;
+      padding-left: 17px;
+    }
+  }
+
+  .form__comment::before {
+    left: -28px;
+  }
+
+  .form__extra {
+    padding-left: 0;
+
+    &::before {
+      left: -28px;
+    }
+  }
+
+  .form__btn {
+    flex-basis: 567px;
+    padding: 16px 0;
+    margin-right: 83px;
+  }
+
+  .form__submit {
+    padding-bottom: 84px;
   }
 }

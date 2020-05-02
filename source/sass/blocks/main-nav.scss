@@ -28,4 +28,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 481px;
+  }
+}

@@ -1,6 +1,8 @@
 .catalog-pro {
   background-color: $background-color;
   padding: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .catalog-pro__title {
@@ -11,11 +13,39 @@
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  padding-left: 70px;
+  position: relative;
+  margin-bottom: 28px;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: -6px;
+    left: 1px;
+    border-radius: 50%;
+    background-color: $main-color;
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    width: 67px;
+    height: 28px;
+    position: absolute;
+    top: 5px;
+    left: -7px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .catalog-pro__text {
   font-family: $font-second;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   padding: 0;
   margin: 0;
   padding-bottom: 23px;
@@ -29,6 +59,10 @@
   font-size: 16px;
   line-height: 16px;
   color: $main-black;
+
+  svg {
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -42,7 +76,17 @@
   .catalog-pro__title {
     font-size: 36px;
     line-height: 37px;
+    padding: 0;
+    padding-top: 30px;
+    margin: 0;
 
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: none;
+    }
   }
 
   .catalog-pro__text {
@@ -81,6 +125,10 @@
     font-size: 20px;
     line-height: 20px;
     padding-top: 33px;
+
+    svg {
+      margin-left: 23px;
+    }
   }
 }
 
