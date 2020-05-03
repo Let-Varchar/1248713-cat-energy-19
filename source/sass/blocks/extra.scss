@@ -1,5 +1,5 @@
 .extra {
-  padding-top: 31px;
+  padding-top: 28px;
   margin-bottom: 39px;
 }
 
@@ -20,6 +20,7 @@
   .extra {
     width: 100%;
     position: relative;
+    margin: 0;
 
     &::before {
       content: "";
@@ -46,7 +47,7 @@
 
 @media (min-width: $desktop-width) {
   .extra {
-    margin-top: -66px;
+    margin-top: -70px;
     padding-top: 0;
     margin-bottom: 0;
 

@@ -9,7 +9,7 @@
   svg {
     width: 31px;
     height: 31px;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     fill: $input-label;
     opacity: 0.2;
   }
@@ -23,7 +23,7 @@
   font-size: 16px;
   line-height: 20px;
   color: $main-black;
-  margin-bottom: 11px;
+  margin-bottom: 7px;
   text-transform: uppercase;
 }
 
@@ -34,7 +34,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 
 .more-items__btn {
@@ -45,11 +45,12 @@
 @media (min-width: $tablet-width) {
   .more-items {
     margin-bottom: 0;
+    width: 324px;
 
     svg {
       width: 61px;
       height: 61px;
-      margin-bottom: 50px;
+      margin-bottom: 77px;
     }
   }
 
@@ -58,14 +59,14 @@
     line-height: 20px;
     width: 50%;
     text-align: center;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
   }
 
   .more-items__text {
     font-size: 16px;
     width: 60%;
     text-align: center;
-    margin-bottom: 85px;
+    margin-bottom: 80px;
   }
 
   .more-items__btn {

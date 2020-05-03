@@ -1,6 +1,4 @@
 .gift {
-  padding-top: 39px;
-  padding-bottom: 35px;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   width: 280px;
   height: 289px;
@@ -10,8 +8,8 @@
     width: 56px;
     height: 61px;
     position: absolute;
-    top: 25%;
-    left: 50%;
+    top: 65px;
+    left: 138px;
     transform: translate(-50%, 0);
     fill: $second-color;
   }
@@ -25,14 +23,14 @@
   color: $second-color;
   padding: 0;
   margin: 0;
-  padding: 130px 55px 43px 55px;
+  padding: 187px 55px 43px 55px;
   text-align: center;
 
 }
 
 @media (min-width: $tablet-width) {
   .gift {
-    min-height: 345px;
+    min-height: 337px;
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
     width: 708px;
     height: 200px;

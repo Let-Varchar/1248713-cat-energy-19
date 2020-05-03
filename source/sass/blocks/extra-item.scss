@@ -1,6 +1,6 @@
 .extra-item {
-  padding-top: 14px;
-  padding-bottom: 15px;
+  padding-top: 17px;
+  padding-bottom: 14px;
   border-bottom: 1px solid $decor-color;
 }
 
@@ -12,8 +12,24 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  text-transform: uppercase;
   color: $input-label;
   padding-bottom: 15px;
+}
+
+.extra-item__total {
+  margin-bottom: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font-second;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.extra-item__container {
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,12 +42,14 @@
   .extra-item__wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
   }
 
   .extra-item__title {
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
+    padding: 0;
   }
 
   .extra-item__wrapper .extra-item__total {
@@ -41,6 +59,20 @@
 
   .extra-item__buy {
     width: 100%;
+    padding: 10px 0;
+  }
+
+  .extra-item__total {
+    display: flex;
+    margin: 0;
+  }
+
+  .extra-item__price {
+    margin-left: 20px;
+  }
+
+  .extra-item__container {
+    margin-bottom: 0;
   }
 }
 
