@@ -1,0 +1,40 @@
+.form-main__title {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-top: 18px;
+  color: $main-black;
+}
+
+.form__text {
+  margin: 0;
+  font-family: $font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+  padding-right: 20px;
+  color: $main-black;
+}
+
+.form-main__top {
+  @include wrapper;
+}
+
+@media (min-width: $tablet-width) {
+  .form-main__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 31px;
+    margin-bottom: 53px;
+  }
+
+  .form-main__top {
+    padding-bottom: 27px;
+  }
+
+}

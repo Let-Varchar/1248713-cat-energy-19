@@ -1,26 +1,27 @@
-.page-header {
-  margin-top: 11px;
-}
-
 .page-header__wrapper {
   @include wrapper;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 66px;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
-    margin-top: 53px;
+    min-height: 110px;
   }
 
-  .page-header__logo {
-    width: 174px;
-  }
+
 
   .page-header__wrapper {
     z-index: 6;
+  }
+}
 
+@media (min-width: $desktop-width) {
+
+  .page-header {
+    min-height: 172px;
   }
 }

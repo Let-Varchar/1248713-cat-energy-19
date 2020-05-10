@@ -1,22 +1,20 @@
 .social {
-  list-style: none;
-  border-bottom: 1px solid $decor-color;
   padding: 0;
-  margin: 0;
-  height: 62px;
+  margin: 0 auto;
+  list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 132px;
 }
 
 .social__link {
-
   display: block;
 
   &--vk {
     width: 22px;
     height: 19px;
-    margin-right: 36px;
+
 
     path {
       fill: $social-color;
@@ -26,7 +24,7 @@
   &--instagram {
     width: 17px;
     height: 19px;
-    margin-right: 40px;
+
 
     path {
       fill: $social-color;
@@ -46,5 +44,53 @@
 @media (min-width: $tablet-width) {
   .social {
     border: none;
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social__link {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social__link {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

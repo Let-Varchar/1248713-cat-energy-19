@@ -1,25 +1,23 @@
-.address {}
-
+.address {
+  background-color: $background-color;
+}
 
 .address__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   @include wrapper;
+  padding-top: 25px;
+  padding-bottom: 26px;
+  display: flex;
 }
 
 .address__title {
   margin: 0;
-  padding: 0;
-  padding-top: 31px;
-  padding-bottom: 26px;
   font-family: $font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $main-black;
-  margin-right: 19px;
+  min-width: 141px;
 }
 
 .address__text {
@@ -31,17 +29,21 @@
   color: $input-text;
   padding: 0;
   margin: 0;
+  text-align: left;
+  min-width: 150px;
 }
 
 .address__map {
   display: block;
   margin: 0 auto;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
 
   .address__wrapper {
-    min-height: 201px;
+    padding-top: 70px;
+    padding-bottom: 57px;
     padding-left: 71px;
     padding-right: 72px;
     display: flex;
@@ -63,17 +65,21 @@
     line-height: 20px;
     padding: 0;
     margin: 0;
+    text-align: right;
   }
 
   .address__city {
     display: block;
-    padding-top: 24px;
+    padding-top: 20px;
   }
 
   .address__map {
     display: block;
-    width: 768px;
-    height: 400px;
+    margin: 0 auto;
+
+    iframe {
+      height: 400px;
+    }
   }
 }
 
@@ -83,8 +89,7 @@
   }
 
   .address__map {
-    width: 100vw;
-    height: 400px;
+    width: 1300px;
     position: relative;
     display: block;
 
@@ -104,10 +109,17 @@
   .address__wrapper {
     position: absolute;
     z-index: 5;
-    width: 570px;
     background-color: #ffffff;
-    top: 50%;
-    left: 10%;
+    top: 195px;
+    left: 122px;
     transform: translate(-10%, -50%);
+    display: flex;
+    width: 570px;
+    padding: 57px 83px 55px 77px;
+    justify-content: space-between;
+  }
+
+  .address__city {
+    padding-top: 20px;
   }
 }

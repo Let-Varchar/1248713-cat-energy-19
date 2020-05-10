@@ -1,0 +1,276 @@
+.form__cat {
+  @include wrapper;
+}
+
+.form__title {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  span {
+    padding: 0;
+    padding-right: 30px;
+    background-color: #ffffff;
+    font-family: $font;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    display: inline-block;
+    color: $main-black;
+  }
+}
+
+
+.form__owner {
+  position: relative;
+  @include wrapper;
+  padding-top: 32px;
+
+  &::before {
+    content: "";
+    height: 5px;
+    background-color: $main-color;
+    top: 45px;
+    left: 22px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  span {
+    width: 220px;
+  }
+}
+
+.form__comment {
+  position: relative;
+  @include wrapper;
+  padding-top: 28px;
+
+  &::before {
+    content: "";
+    height: 5px;
+    background-color: $main-color;
+    top: 45px;
+    left: 22px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding-top: 15px;
+    padding-left: 16px;
+    font-family: $font;
+    font-size: 16px;
+    line-height: 18px;
+    color: $input-text;
+    text-transform: uppercase;
+    border: 1px solid $input-border;
+  }
+}
+
+
+.form__extra {
+  position: relative;
+  @include wrapper;
+  padding-bottom: 13px;
+  padding-top: 28px;
+
+  &::before {
+    content: "";
+    height: 5px;
+    background-color: $main-color;
+    top: 45px;
+    left: 22px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .form__title {
+    margin-bottom: 39px;
+  }
+}
+
+.form__submit {
+  position: relative;
+  @include wrapper;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 34px;
+}
+
+.form__btn {
+  margin-bottom: 23px;
+}
+
+.form__note {
+  text-align: center;
+  font-family: $font-second;
+  font-size: 14px;
+  line-height: 16px;
+  color: $input-text;
+}
+
+
+
+@media (min-width: $tablet-width) {
+
+  .form__title {
+    position: relative;
+    padding: 0;
+    margin-bottom: 70px;
+
+    span {
+      font-size: 36px;
+      line-height: 36px;
+      padding: 0 40px;
+      background-color: #ffffff;
+      width: auto;
+    }
+  }
+
+  .form__text {
+    padding-left: 40px;
+    padding-right: 300px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__cat {
+    padding-left: 70px;
+    padding-bottom: 77px;
+    border: none;
+  }
+
+  .form__owner {
+    padding-right: 65px;
+    padding-left: 30px;
+    padding-bottom: 65px;
+
+    &::before {
+      top: 20px;
+      left: 0;
+    }
+  }
+
+
+
+  .form__owner-inputs {
+    padding-left: 40px;
+    padding-top: 5px;
+  }
+
+  .form__comment::before {
+    top: 20px;
+    left: 0;
+  }
+
+  .form__comment {
+    padding-bottom: 69px;
+    padding-left: 31px;
+
+    textarea {
+      height: 174px;
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 13px;
+      padding-left: 20px;
+    }
+
+    .form__wrapper {
+      padding-left: 38px;
+    }
+  }
+
+  .form__extra::before {
+    top: 20px;
+    left: 0;
+  }
+
+  .form__extra {
+    .form__title {
+      margin-bottom: 64px;
+    }
+  }
+
+  .form__submit {
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 72px;
+    padding-left: 70px;
+  }
+
+  .form__btn {
+    flex-basis: 283px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 61px;
+  }
+
+  .form__note {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__text {
+    padding-left: 0;
+    padding-right: 850px;
+  }
+
+  .form__cat {
+    padding-left: 40px;
+    padding-bottom: 66px;
+  }
+
+  .form__owner {
+    padding-left: 40px;
+    padding-bottom: 71px;
+
+    &::before {
+      left: -27px;
+    }
+  }
+
+  .form__comment {
+    padding-left: 0;
+
+    .form__wrapper {
+      padding-left: 40px;
+    }
+
+    textarea {
+      padding-top: 15px;
+      padding-left: 17px;
+    }
+  }
+
+  .form__comment::before {
+    left: -28px;
+  }
+
+  .form__extra {
+    padding-left: 0;
+
+    &::before {
+      left: -28px;
+    }
+  }
+
+  .form__btn {
+    flex-basis: 567px;
+    padding: 16px 0;
+    margin-right: 83px;
+  }
+
+  .form__submit {
+    padding-bottom: 84px;
+  }
+}
