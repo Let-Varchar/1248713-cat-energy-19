@@ -25,6 +25,21 @@
   @include wrapper;
 }
 
+input {
+  outline: none;
+  border-color: $input-border;
+}
+
+input:focus {
+  border: 2px solid $input-text;
+}
+
+input:invalid {
+  outline: $error-color;
+
+}
+
+
 @media (min-width: $tablet-width) {
   .form-main__title {
     font-size: 60px;

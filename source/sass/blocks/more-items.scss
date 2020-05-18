@@ -40,6 +40,10 @@
 .more-items__btn {
   background-color: $background-color;
   color: $input-text;
+
+  &:hover {
+    background-color: $hover-btn;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -50,7 +54,7 @@
     svg {
       width: 61px;
       height: 61px;
-      margin-bottom: 77px;
+      margin-bottom: 85px;
     }
   }
 
@@ -86,7 +90,7 @@
     padding-top: 54px;
 
     svg {
-      margin-bottom: 48px;
+      margin-bottom: 72px;
     }
   }
 

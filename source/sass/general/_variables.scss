@@ -1,6 +1,7 @@
 //Colors variables
 
 $main-color: #68b738; //основной цвет сайта
+$main-color-hover: #5eaa2f;
 $main-black: #111111; //основной черный
 $input-label: #222222; //обводка для полей ввода
 $input-text: #444444; //цвет текста внутри полей ввода и цвет обводки в фокусе
@@ -11,6 +12,9 @@ $second-color: #ffffff;
 $background-color: #f2f2f2;
 $decor-color: #d9d9d9;
 $social-color: #666666;
+$background-color-two: #eaeaea;
+$hover-btn: #ebebeb;
+$error-color: #ff8282;
 //Fonts variables
 
 $font: "Oswald",
@@ -22,5 +26,6 @@ Tahoma,
 sans-serif;
 
 //Width variables
-$tablet-width: 708px;
+$tablet-width: 768px;
 $desktop-width: 1300px;
+$mobile-width-only: 767px;

@@ -156,6 +156,11 @@
       top: 20px;
       left: 0;
     }
+
+    .form__btn {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
   }
 
 
@@ -220,6 +225,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form__title {
+    span {
+      padding: 0 37px;
+    }
+  }
+
   .form__text {
     padding-left: 0;
     padding-right: 850px;
@@ -227,15 +238,17 @@
 
   .form__cat {
     padding-left: 40px;
-    padding-bottom: 66px;
+    padding-bottom: 70px;
   }
 
   .form__owner {
-    padding-left: 40px;
-    padding-bottom: 71px;
+    padding-left: 0;
+    padding-bottom: 68px;
+
 
     &::before {
-      left: -27px;
+      width: 1440px;
+      left: -69px;
     }
   }
 
@@ -253,14 +266,16 @@
   }
 
   .form__comment::before {
-    left: -28px;
+    left: -69px;
+    width: 1440px;
   }
 
   .form__extra {
     padding-left: 0;
 
     &::before {
-      left: -28px;
+      left: -69px;
+      width: 1440px;
     }
   }
 
@@ -271,6 +286,7 @@
   }
 
   .form__submit {
+    padding-left: 40px;
     padding-bottom: 84px;
   }
 }

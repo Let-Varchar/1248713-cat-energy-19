@@ -160,4 +160,16 @@
       top: -110px;
     }
   }
+
+  .about-list__item--fast::before {
+    left: 5px;
+  }
+
+  .about-list__item--eat::before {
+    left: 11px;
+  }
+
+  .about-list__item--result::before {
+    left: 22px;
+  }
 }

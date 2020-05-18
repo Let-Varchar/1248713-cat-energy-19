@@ -28,7 +28,7 @@
   padding-top: 11px;
 }
 
-.product_wrapper {
+.product__wrapper {
   display: flex;
   justify-content: space-between;
   height: 144px;
@@ -59,7 +59,7 @@
   }
 
 
-  .product_wrapper {
+  .product__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,6 +153,7 @@
   .product__btn {
     padding: 10px 0;
     width: 169px;
+    margin-top: 16px;
   }
 
 }
