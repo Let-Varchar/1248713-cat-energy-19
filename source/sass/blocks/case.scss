@@ -1,5 +1,6 @@
 .case {
   position: relative;
+
   @include wrapper;
   padding: 0;
 }
@@ -8,7 +9,6 @@
   .case {
     padding: 0;
     padding-top: 28px;
-
   }
 }
 
@@ -51,6 +51,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $second-color;
+
     @include wrapper;
   }
 
@@ -65,6 +66,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
+
   @include wrapper;
 
   @media (min-width: $tablet-width) {

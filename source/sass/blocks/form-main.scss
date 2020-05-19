@@ -36,9 +36,7 @@ input:focus {
 
 input:invalid {
   outline: $error-color;
-
 }
-
 
 @media (min-width: $tablet-width) {
   .form-main__title {
@@ -51,5 +49,4 @@ input:invalid {
   .form-main__top {
     padding-bottom: 27px;
   }
-
 }

@@ -6,11 +6,9 @@
   }
 }
 
-
 .developer:active {
   opacity: 0.3;
 }
-
 
 .developer__link {
   display: block;
@@ -31,7 +29,6 @@
     fill: $social-color;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .developer {
