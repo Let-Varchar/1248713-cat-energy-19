@@ -31,6 +31,12 @@
   @include wrapper;
 }
 
+.page-footer__wrapper::after {
+  content: "";
+  min-height: inherit;
+  font-size: 0;
+}
+
 .page-footer__developer {
   padding-top: 19px;
   padding-bottom: 22px;
@@ -55,6 +61,12 @@
     align-items: center;
   }
 
+  .page-footer__wrapper::after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
+  }
+
   .page-footer__logo {
     padding: 0;
     border: none;
@@ -77,4 +89,10 @@
   .page-footer__wrapper {
     min-height: 144px;
   }
+}
+
+.page-footer__wrapper::after {
+  content: "";
+  min-height: inherit;
+  font-size: 0;
 }

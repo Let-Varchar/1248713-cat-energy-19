@@ -68,6 +68,7 @@
 
 
 
+
 @media (max-width: $mobile-width-only) {
 
 
@@ -77,6 +78,14 @@
     &--active {
       display: block;
     }
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list {
+    display: block;
   }
 }
 

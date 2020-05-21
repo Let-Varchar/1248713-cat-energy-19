@@ -10,6 +10,14 @@
   margin-bottom: 30px;
 }
 
+@media (min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  .choose-prog {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
 .choose-prog__title {
   font-family: $font;
   font-weight: 400;
@@ -141,6 +149,14 @@
       background-repeat: no-repeat;
       background-size: contain;
       z-index: -1;
+
+    }
+  }
+
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    .choose-prog__wrapper::before {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
     }
   }
 
@@ -152,6 +168,5 @@
     left: 488px;
     transform: translate(0, -50%);
   }
-
 
 }
