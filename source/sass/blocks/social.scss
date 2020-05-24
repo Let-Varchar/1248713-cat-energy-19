@@ -39,6 +39,19 @@
       fill: $social-color;
     }
   }
+
+  &:hover {
+    path {
+      fill: $main-color;
+    }
+  }
+
+  &:active {
+    path {
+      fill: $main-color;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

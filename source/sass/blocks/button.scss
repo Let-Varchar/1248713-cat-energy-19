@@ -14,4 +14,13 @@
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $main-color-hover;
+  }
+
+  &:active {
+    background-color: $main-color-hover;
+    opacity: 0.3;
+  }
 }

@@ -48,9 +48,7 @@
   border-bottom: 1px solid $decor-color;
   padding-top: 23px;
   padding-bottom: 23px;
-}
 
-.cat__radio {
   .cat__wrapper {
     margin-bottom: 26px;
 
@@ -92,11 +90,16 @@
       top: 3px;
       left: 9px;
     }
+
+    &:hover::before {
+      border-color: $radiobox-hvr;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
-
-
-
 
 @media (min-width: $tablet-width) {
   .cat {
@@ -169,6 +172,7 @@
   .cat__inner {
     width: 50%;
     margin-right: 80px;
+    margin-bottom: 0;
   }
 
   .cat__radio {
@@ -196,13 +200,5 @@
 
   .cat__wrapper:last-child {
     margin-bottom: 0;
-  }
-
-  .form__owner {
-    padding-left: 0;
-  }
-
-  .form__title span {
-    padding: 0 23px;
   }
 }

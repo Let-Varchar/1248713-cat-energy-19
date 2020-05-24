@@ -1,12 +1,9 @@
-.address {
-  background-color: $background-color;
-}
-
 .address__wrapper {
-  @include wrapper;
   padding-top: 25px;
   padding-bottom: 26px;
   display: flex;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .address__title {
@@ -37,12 +34,17 @@
   display: block;
   margin: 0 auto;
   width: 100%;
+
+  iframe {
+    height: 365px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-
   .address__wrapper {
-    padding-top: 70px;
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 64px;
     padding-bottom: 57px;
     padding-left: 71px;
     padding-right: 72px;
@@ -92,26 +94,14 @@
     width: 1300px;
     position: relative;
     display: block;
-
-    &::before {
-      content: "";
-      width: 113px;
-      height: 106px;
-      background-image: url("../../img/map-pin.png");
-      background-repeat: no-repeat;
-      position: absolute;
-      z-index: 5;
-      top: 123px;
-      left: 891px;
-    }
   }
 
   .address__wrapper {
     position: absolute;
     z-index: 5;
     background-color: #ffffff;
-    top: 195px;
-    left: 122px;
+    top: 198px;
+    left: 283px;
     transform: translate(-10%, -50%);
     display: flex;
     width: 570px;
@@ -121,5 +111,9 @@
 
   .address__city {
     padding-top: 20px;
+  }
+
+  .address__text {
+    text-align: left;
   }
 }

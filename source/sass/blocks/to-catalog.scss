@@ -8,6 +8,29 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $main-black;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 12px;
+    top: 25px;
+    left: 110px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover::after {
+    width: 34px;
+    height: 12px;
+    top: 40px;
+    left: 125px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
 }
 
 .to-catalog__slim {
@@ -23,5 +46,15 @@
   .to-catalog__slim {
     margin-bottom: 0;
     margin-right: 80px;
+  }
+
+  .to-catalog__link::after {
+    top: 3px;
+    left: 127px;
+  }
+
+  .to-catalog__link:hover::after {
+    top: 3px;
+    left: 131px;
   }
 }

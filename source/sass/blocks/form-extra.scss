@@ -51,6 +51,13 @@
     left: 12px;
   }
 
+  &:hover::before {
+    border-color: $radiobox-hvr;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -93,10 +100,7 @@
     }
   }
 
-  .form__btn {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+
 }
 
 @media (min-width: $desktop-width) {

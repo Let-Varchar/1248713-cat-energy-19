@@ -76,7 +76,7 @@
       width: 80px;
       height: 80px;
       top: -111px;
-      left: 0px;
+      left: 0;
     }
 
     &:nth-child(2n) {
@@ -159,5 +159,17 @@
       height: 80px;
       top: -110px;
     }
+  }
+
+  .about-list__item--fast::before {
+    left: 5px;
+  }
+
+  .about-list__item--eat::before {
+    left: 11px;
+  }
+
+  .about-list__item--result::before {
+    left: 22px;
   }
 }
